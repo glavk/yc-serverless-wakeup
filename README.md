@@ -7,7 +7,7 @@ Also `sleep.go` is used to stop running instances (e.g. at weekend period).
 
 ## Trigger example
 
-![Trigger example](trigger.png) \
+![Trigger example](trigger.png)
 
 ## Links
 

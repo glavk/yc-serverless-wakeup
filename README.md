@@ -5,7 +5,9 @@ You need to have service account and create trigger (as cron job) to launch this
 Tune `folderID` in wakeup.go variable with your Folder ID value in Yandex Cloud where compute instances works.
 
 ## Trigger example
+
 ![Trigger example](trigger.png) \
 
 ## Links
-- Yandex Cloud SDK for Go[https://cloud.yandex.ru/docs/functions/lang/golang/sdk]
+
+- [Yandex Cloud SDK for Go](https://cloud.yandex.ru/docs/functions/lang/golang/sdk)

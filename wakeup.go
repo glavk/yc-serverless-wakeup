@@ -25,7 +25,7 @@ var (
 	folderID = "yourFolderID"
 )
 
-func startComputeInstances(ctx context.Context) (*Response, error) {
+func StartComputeInstances(ctx context.Context) (*Response, error) {
 	// SDK auth via service account
 	sdk, err := ycsdk.Build(ctx, ycsdk.Config{
 		// Call InstanceServiceAccount get IAM-token and form auth in SDK
@@ -43,7 +43,7 @@ func startComputeInstances(ctx context.Context) (*Response, error) {
 	}
 	instances := listInstancesResponse.GetInstances()
 	count := 0
-	// Filter Compute Instance in Running state
+	// Filter Compute Instance in not Running state (stopped)
 	for _, i := range instances {
 		if i.Status != compute.Instance_RUNNING {
 			_, err := startComputeInstance(ctx, sdk, i.GetId())
